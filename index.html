@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologie Clasa a IX-a - Teorie și Quiz: Celula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="app-header">
+        <h1>🧬 Biologie - Clasa a IX-a</h1>
+        <p>Capitolul 1: Celula, unitatea de bază a vieții — Teorie & Evaluare</p>
+        <div class="nav-tabs">
+            <button class="tab-btn active" id="tab-teorie" onclick="switchTab('teorie')">📖 Noțiuni Teoretice</button>
+            <button class="tab-btn" id="tab-quiz" onclick="switchTab('quiz')">📝 Quiz Interactiv (30 Întrebări)</button>
+        </div>
+    </div>
+
+    <!-- SECȚIUNEA DE TEORIE -->
+    <div class="theory-section active" id="section-teorie">
+        <div class="theory-intro">
+            <h2>Sinteză teoretică: Diviziunea celulară, Ereditatea și Genetica umană</h2>
+            <p>Parcurge noțiunile de bază de mai jos înainte de a începe testul de evaluare sau folosește-le pentru recapitulare rapidă.</p>
+        </div>
+
+        <div class="theory-card">
+            <h3>1. Diviziunea celulară (Amitoza, Mitoza și Meioza)</h3>
+            <ul>
+                <li><strong>Amitoza (diviziunea directă):</strong> Caracteristică procariotelor și unor eucariote inferioare (ex. <em>drojdia de bere</em> — prin strangulare; unele protiste — prin sciziune). Are loc <strong>fără</strong> dispariția completă a membranei nucleare, fără fus de diviziune și fără condensarea cromozomilor.</li>
+                <li><strong>Mitoza (diviziunea indirectă):</strong> Caracteristică celulelor somatice (diploide, <strong>2n</strong>). Dintr-o celulă-mamă rezultă <strong>2 celule-fiice diploide (2n)</strong> identice. După <em>n</em> mitoze rezultă <strong>2ⁿ</strong> celule. Cuprinde 4 faze: <strong>Profaza → Metafaza → Anafaza → Telofaza</strong>.</li>
+                <li><strong>Meioza:</strong> Caracteristică celulelor reproducătoare (formarea gameților). Cuprinde două etape:
+                    <ul>
+                        <li><em>Meioza I (reducțională):</em> Dintr-o celulă diploidă (2n) rezultă 2 celule haploide (n).</li>
+                        <li><em>Meioza II (ecvațională):</em> Asemănătoare mitozei; rezultă în final <strong>4 celule haploide (n)</strong>.</li>
+                    </ul>
+                </li>
+                <li><strong>Gametogeneza și Ontogeneza:</strong>
+                    <ul>
+                        <li><em>Spermatogeneza:</em> Dintr-un spermatocit primar (2n) rezultă <strong>4 spermatozoizi funcționali (n)</strong>.</li>
+                        <li><em>Ovogeneza:</em> Dintr-un ovocit primar (2n) rezultă <strong>1 ovotidă</strong> (care devine ovul funcțional) și <strong>3 globi polari</strong> (care degenerează).</li>
+                        <li><em>Ontogeneza:</em> Procesul de dezvoltare a zigotului într-un organism integral (perioada embrionară + postembrionară).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="theory-card">
+            <h3>2. Legile eredității (Gregor Johann Mendel, 1865) & Variabilitatea</h3>
+            <ul>
+                <li><strong>Noțiuni de bază:</strong>
+                    <ul>
+                        <li><em>Genotip:</em> Totalitatea factorilor ereditari (genelor) unui organism.</li>
+                        <li><em>Fenotip:</em> Totalitatea caracterelor observabile (morfologice, fiziologice, biochimice, comportamentale), rezultate din interacțiunea genotipului cu mediul.</li>
+                        <li><em>Gene alele:</em> Gene situate în același locus pe cromozomii omologi, determinând același caracter.</li>
+                        <li><em>Gena dominantă (A):</em> Se manifestă atât în stare homozigotă (AA), cât și heterozigotă (Aa).</li>
+                        <li><em>Gena recesivă (a):</em> Se manifestă în fenotip doar în stare homozigotă recesivă (aa).</li>
+                    </ul>
+                </li>
+                <li><strong>Segregarea caracterelor în F₂ (Aa × Aa):</strong> Raportul fenotipic este de <strong>3 : 1</strong> (75% caracter dominant, 25% caracter recesiv), iar genotipic 1 AA : 2 Aa : 1 aa.</li>
+                <li><strong>Variabilitatea:</strong>
+                    <ul>
+                        <li><em>Variabilitatea ereditară:</em> Modifică materialul genetic (recombinări genetice, mutații) și se transmite urmașilor (ex. albinismul, <strong>poliploidia</strong> — multiplicarea numărului de cromozomi la plante precum căpșunul sau vița-de-vie).</li>
+                        <li><em>Variabilitatea neereditară:</em> Produsă de factorii de mediu fără modificarea ADN-ului; nu se transmite urmașilor (ex. schimbarea culorii blănii la iepure în funcție de anotimp).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="theory-card">
+            <h3>3. Genetica umană și maladiile ereditare</h3>
+            <ul>
+                <li><strong>Genomul uman normal:</strong> Conține <strong>46 de cromozomi (23 de perechi)</strong> — 22 perechi de <em>autozomi</em> și 1 pereche de <em>heterozomi</em> (XX la femeie, XY la bărbat).</li>
+                <li><strong>Maladii genice autozomale:</strong>
+                    <ul>
+                        <li><em>Dominante:</em> Polidactilia (degete suplimentare), brahidactilia, arahnodactilia.</li>
+                        <li><em>Recesive:</em> Albinismul, fenilcetonuria. (Doi părinți purtători sănătoși <code>Aa × Aa</code> au <strong>25%</strong> risc de a avea un copil bolnav <code>aa</code>).</li>
+                    </ul>
+                </li>
+                <li><strong>Maladii genice heterozomale (X-linkate și Y-linkate):</strong>
+                    <ul>
+                        <li><em>Recesive pe cromozomul X:</em> Hemofilia și daltonismul.</li>
+                        <li><em>Pe cromozomul Y:</em> Se transmit exclusiv de la tată la fiu.</li>
+                    </ul>
+                </li>
+                <li><strong>Maladii cromozomiale (produse frecvent prin nondisjuncție în meioză):</strong>
+                    <ul>
+                        <li><em>Trisomia 21 (Sindromul Down):</em> 47 de cromozomi (un cromozom suplimentar în perechea 21). Riscul crește odată cu vârsta mamei după 35 de ani.</li>
+                        <li><em>Trisomia 18 (Sindromul Edwards):</em> 47 de cromozomi (perechea 18).</li>
+                        <li><em>Trisomia 13 (Sindromul Patau):</em> 47 de cromozomi (perechea 13).</li>
+                        <li><em>Sindromul Klinefelter (47, XXY):</em> Afectează sexul masculin.</li>
+                        <li><em>Sindromul Turner (Monosomia X — 45, OX):</em> Afectează exclusiv sexul feminin.</li>
+                        <li><em>Sindromul Cri-du-chat (plâns de pisică):</em> Anomalie structurală cauzată de pierderea (deleția) unei porțiuni dintr-un cromozom al perechii a 5-a.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="start-quiz-cta">
+            <button class="btn-primary-large" onclick="switchTab('quiz')">Începe Quiz-ul de 30 de întrebări ➔</button>
+        </div>
+    </div>
+
+    <!-- SECȚIUNEA DE QUIZ -->
+    <div class="quiz-section" id="section-quiz">
+        <div class="progress-wrapper">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div class="quiz-body" id="quiz-body">
+            <div class="meta-info">
+                <span id="question-counter">Întrebarea 1 din 30</span>
+                <span class="badge" id="question-type">Variante de răspuns</span>
+                <span id="score-tracker">Scor: 0</span>
+            </div>
+
+            <div class="question-text" id="question-text">Se încarcă întrebarea...</div>
+
+            <div class="options-list" id="options-list"></div>
+
+            <div class="explanation-box" id="explanation-box"></div>
+        </div>
+
+        <div class="quiz-footer" id="quiz-footer">
+            <button class="btn-secondary" onclick="switchTab('teorie')">📖 Vezi Teoria</button>
+            <button class="btn-next" id="next-btn">Următoarea întrebare ➔</button>
+        </div>
+
+        <div class="result-screen" id="result-screen">
+            <div class="score-circle">
+                <span class="score-number" id="final-score">0</span>
+                <span class="score-total">din 30 puncte</span>
+            </div>
+            <div class="result-message" id="result-message">Felicitări!</div>
+            <p class="result-subtext" id="result-subtext">Ai finalizat testul de evaluare la Capitolul 1.</p>
+            <div class="result-actions">
+                <button class="btn-secondary" onclick="switchTab('teorie')">📖 Recapitulează Teoria</button>
+                <button class="btn-restart" onclick="restartQuiz()">🔄 Reia Quiz-ul</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
